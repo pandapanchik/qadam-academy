@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qadam Academy — IT kasbini noldan o’rganing</title>
+  <meta name="description" content="Toshkentdagi loyiha asosidagi IT o’quv markaz: Frontend, Python Backend, UI/UX va AI yo’nalishlari. Bepul sinov darsiga yoziling.">
+  <meta name="theme-color" content="#1F2BB8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="stage" aria-hidden="true"><canvas id="scene"></canvas></div>
+
+  <header class="site-head">
+    <div class="wrap site-head__inner">
+      <a class="logo" href="#top" aria-label="Qadam Academy, bosh sahifa">
+        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <rect x="2" y="20" width="9" height="9" rx="2.2" fill="#F3F1FF"/>
+          <rect x="11.5" y="11" width="9" height="9" rx="2.2" fill="#8FA2FF"/>
+          <rect x="21" y="2" width="9" height="9" rx="2.2" fill="#FFD23F"/>
+        </svg>
+        <span>Qadam</span>
+      </a>
+      <nav class="site-nav" aria-label="Asosiy">
+        <a href="#yonalishlar">Yo’nalishlar</a>
+        <a href="#natijalar">Bitiruvchilar</a>
+        <a href="#ariza">Narx va kafolat</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="#ariza">Bepul darsga yozilish</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blok 1: Hero -->
+    <section class="hero" id="top" data-formation="0" data-dim="1">
+      <div class="anchor" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="hero__copy">
+          <p class="intake hero__reveal" style="--d:0"><span class="intake__dot" aria-hidden="true"></span>Noyabr guruhi 3-noyabrda boshlanadi. <strong>9 ta joy qoldi</strong></p>
+          <h1 class="hero__title">
+            <span class="step" style="--i:0"><span>Noldan</span></span>
+            <span class="step" style="--i:1"><span>birinchi IT</span></span>
+            <span class="step" style="--i:2"><span>ishgacha —</span></span>
+            <span class="step" style="--i:3"><span>qadam-baqadam.</span></span>
+          </h1>
+          <p class="hero__lead hero__reveal" style="--d:1">Toshkentdagi loyiha asosidagi o’quv markaz. 5–9 oy davomida real loyihalar ustida ishlaysiz, portfolio yig’asiz va mentor bilan ish suhbatiga tayyorlanasiz.</p>
+          <div class="hero__actions hero__reveal" style="--d:2">
+            <a class="btn btn--primary" href="#yonalishlar">Yo’nalishni tanlash</a>
+            <a class="btn btn--ghost" href="#ariza">Bepul sinov darsiga yozilish</a>
+          </div>
+          <ul class="hero__facts hero__reveal" style="--d:3">
+            <li><b>1 200+</b>bitiruvchi</li>
+            <li><b>84%</b>6 oy ichida ishga kirgan</li>
+            <li><b>12 kishi</b>guruhda ko’pi bilan</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hero__hint hero__reveal" style="--d:4">Bloklarni kursor bilan itarib ko’ring</p>
+    </section>
+
+    <!-- Blok 2: Og'riq va yechim -->
+    <section class="pain" id="muammo" data-formation="1" data-dim="1" data-dim-mobile="0.28">
+      <div class="wrap pain__grid">
+        <div class="anchor" aria-hidden="true"></div>
+        <div class="pain__copy">
+          <h2>Yuzlab soat video ko’rdingiz. Bitta tayyor loyiha yo’q.</h2>
+          <ul class="pain__list">
+            <li>Darslikni takrorlaysiz, lekin o’zingiz boshlasangiz bo’sh fayl oldida qotib qolasiz.</li>
+            <li>Rezyumega yozadigan, havolasini beradigan ishingiz yo’q.</li>
+            <li>Suhbatda “Git bilan qanday ishlaysiz?” degan birinchi savoldayoq to’xtab qolasiz.</li>
+          </ul>
+          <p class="pain__turn">Qadam’da nazariya loyiha uchun qancha kerak bo’lsa, shuncha. Qolgan vaqt klaviatura ortida o’tadi, mentor esa yoningizda.</p>
+          <div class="shift">
+            <div class="shift__from">
+              <h3>Kirishda</h3>
+              <p>Kod yozib ko’rgan, lekin tizimli bilimi va tajribasi yo’q odam.</p>
+            </div>
+            <div class="shift__to">
+              <h3>Chiqishda</h3>
+              <p>GitHub’da 4 ta ishlaydigan loyihasi, jamoada ishlash tajribasi va tayyor rezyumesi bor junior mutaxassis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blok 3: Dastur va jarayon -->
+    <section class="programs" id="yonalishlar" data-formation="2" data-dim="0.26" data-dim-mobile="0.2">
+      <div class="anchor" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="programs__head">
+          <h2>Har modul oxirida tayyor ish qoladi, shunchaki ko’rilgan video emas</h2>
+          <p>Darsning qanday o’tishi hamma yo’nalishda bir xil. Pastda yo’nalishni tanlang: har bosqichda nimani o’rganishingiz va qo’lingizda nima qolishini ko’rasiz.</p>
+        </div>
+        <ol class="method">
+          <li><h3>Qisqa nazariya</h3><p>30 daqiqalik dars, faqat bugungi loyihaga kerakli mavzu.</p></li>
+          <li><h3>Loyiha ustida ishlash</h3><p>Dars vaqtining 70% amaliyot. Kodni siz yozasiz, savolni mentorga berasiz.</p></li>
+          <li><h3>Code review</h3><p>Mentor har bir pull request’ingizni tekshirib, izoh qoldiradi.</p></li>
+          <li><h3>Demo-day</h3><p>Modul oxirida loyihangizni guruh va hamkor kompaniyalar oldida himoya qilasiz.</p></li>
+        </ol>
+        <div class="tabs" role="tablist" aria-label="Yo’nalishlar"></div>
+        <div class="course" id="course-panel" role="tabpanel" tabindex="0"></div>
+      </div>
+    </section>
+
+    <!-- Blok 4: Ijtimoiy isbot -->
+    <section class="proof" id="natijalar" data-formation="3" data-dim="0.3" data-dim-mobile="0.2">
+      <div class="anchor" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 class="proof__title">Bitiruvchilar nima qurdi va qayerda ishlayapti</h2>
+        <dl class="stats">
+          <div><dt>Bitirgandan keyin 6 oy ichida ishga kirgan</dt><dd>84%</dd></div>
+          <div><dt>O’rtacha birinchi maosh</dt><dd>7,5 mln so’m</dd></div>
+          <div><dt>Demo-day’da nomzod tanlaydigan hamkor kompaniya</dt><dd>40+</dd></div>
+        </dl>
+
+        <div class="stories">
+          <article class="story">
+            <div class="story__avatar story__avatar--yellow" aria-hidden="true">D</div>
+            <div class="story__who">
+              <h3>Dilnoza, 24 yosh</h3>
+              <p><span>Oldin:</span> bank kassiri</p>
+              <p><span>Hozir:</span> frontend dasturchi, fintech startap</p>
+            </div>
+            <blockquote>O’qishni tugatib, 5 oyda birinchi oferni oldim. Suhbatda demo-day’dagi loyihamni ko’rsatdim, qolgan savollar shu bilan yopildi.</blockquote>
+          </article>
+          <article class="story">
+            <div class="story__avatar story__avatar--mint" aria-hidden="true">J</div>
+            <div class="story__who">
+              <h3>Javohir, 19 yosh</h3>
+              <p><span>Oldin:</span> maktab bitiruvchisi, tajribasiz</p>
+              <p><span>Hozir:</span> Python backend dasturchi, logistika kompaniyasi</p>
+            </div>
+            <blockquote>Mentor har bir pull request’imga yigirmatagacha izoh yozardi. Ishga kirganimda code review’dan umuman qo’rqmadim.</blockquote>
+          </article>
+          <article class="story">
+            <div class="story__avatar story__avatar--sky" aria-hidden="true">M</div>
+            <div class="story__who">
+              <h3>Malika, 31 yosh</h3>
+              <p><span>Oldin:</span> ingliz tili o’qituvchisi</p>
+              <p><span>Hozir:</span> UI/UX dizayner, dizayn agentligi</p>
+            </div>
+            <blockquote>Kurs davomida uchta real buyurtmachi bilan ishladim. Portfoliomdagi har bir keys o’shalardan.</blockquote>
+          </article>
+        </div>
+
+        <h3 class="projects__title">Bitiruvchilar loyihalaridan</h3>
+        <ul class="projects">
+          <li class="project">
+            <div class="project__thumb project__thumb--a" aria-hidden="true"></div>
+            <h4>Somsa yetkazib berish ilovasi</h4>
+            <p>Dilnoza R.</p><p class="project__stack">React, TypeScript</p>
+          </li>
+          <li class="project">
+            <div class="project__thumb project__thumb--b" aria-hidden="true"></div>
+            <h4>Maktab uchun elektron jurnal</h4>
+            <p>Javohir T.</p><p class="project__stack">Django, PostgreSQL</p>
+          </li>
+          <li class="project">
+            <div class="project__thumb project__thumb--c" aria-hidden="true"></div>
+            <h4>Toshkentda ijara narxlari bashorati</h4>
+            <p>Sardor A.</p><p class="project__stack">Pandas, scikit-learn</p>
+          </li>
+          <li class="project">
+            <div class="project__thumb project__thumb--d" aria-hidden="true"></div>
+            <h4>Kutubxona mobil ilovasi dizayni</h4>
+            <p>Malika Y.</p><p class="project__stack">Figma</p>
+          </li>
+        </ul>
+
+        <p class="proof__ecosystem">Bitiruvchilarimiz banklar, fintech, e-commerce, logistika va autsorsing kompaniyalarida ishlaydi. Hamkorlar har demo-day’ga keladi va eng kuchli loyihalar mualliflarini to’g’ridan-to’g’ri suhbatga chaqiradi.</p>
+      </div>
+    </section>
+
+    <!-- Blok 5: Taklif, kafolat va harakatga chorlash -->
+    <section class="offer" id="ariza" data-formation="4" data-dim="1" data-dim-mobile="1">
+      <div class="wrap offer__grid">
+        <div class="anchor offer__portal">
+          <div class="countdown" data-countdown>
+            <p class="countdown__label">Noyabr guruhi boshlanishiga</p>
+            <div class="countdown__units">
+              <div><span data-unit="d">00</span><small>kun</small></div>
+              <div><span data-unit="h">00</span><small>soat</small></div>
+              <div><span data-unit="m">00</span><small>daqiqa</small></div>
+              <div><span data-unit="s">00</span><small>soniya</small></div>
+            </div>
+            <p class="countdown__seats">12 ta joydan 9 tasi bo’sh</p>
+          </div>
+        </div>
+
+        <div class="paper">
+          <h2>Birinchi qadamni bugun qo’ying</h2>
+          <ul class="included">
+            <li>Tanlangan yo’nalish bo’yicha 5–9 oylik kurs va barcha materiallar</li>
+            <li>Shaxsiy mentor: haftasiga 2 ta code review</li>
+            <li>Yopiq hamjamiyat: bitiruvchilar va hamkor kompaniyalar</li>
+            <li>Karyera markazi: rezyume, portfolio va 3 ta sinov intervyusi</li>
+          </ul>
+          <p class="price"><b>oyiga 1 190 000 so’mdan</b><span>To’liq to’lovda 15% chegirma</span></p>
+
+          <div class="guarantee">
+            <p class="guarantee__big">2 hafta</p>
+            <p>sinov muddati. O’qish yoqmasa, to’lovingizni to’liq qaytaramiz, sababini so’ramaymiz.</p>
+          </div>
+
+          <form class="lead-form" id="lead-form" novalidate>
+            <div class="field">
+              <label for="f-name">Ismingiz</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" required aria-describedby="e-name">
+              <p class="field__error" id="e-name" data-error-for="name"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Telefon raqamingiz</label>
+              <div class="phone">
+                <span class="phone__code">+998</span>
+                <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67" required aria-describedby="e-phone">
+              </div>
+              <p class="field__error" id="e-phone" data-error-for="phone"></p>
+            </div>
+            <div class="field">
+              <label for="f-course">Yo’nalish</label>
+              <select id="f-course" name="course"></select>
+            </div>
+            <button class="btn btn--solid btn--block" type="submit">Bepul sinov darsiga yozilish</button>
+            <p class="lead-form__note">Ish vaqtida 15 daqiqa ichida qo’ng’iroq qilamiz. Raqamingiz faqat shu maqsadda ishlatiladi.</p>
+          </form>
+
+          <div class="success" id="lead-success" hidden>
+            <h3 tabindex="-1">Arizangiz qabul qilindi</h3>
+            <p data-success-text></p>
+          </div>
+
+          <p class="alt-contact">Yozish qulayroqmi? <a href="https://t.me/" target="_blank" rel="noopener">Telegram’da yozing</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap site-foot__inner">
+      <p class="site-foot__brand">Qadam Academy</p>
+      <p>Toshkent, Chilonzor tumani<br>Har kuni 9:00–20:00</p>
+      <p><a href="tel:+998712000000">+998 71 200 00 00</a><br><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></p>
+      <p class="site-foot__copy">© 2026 Qadam Academy</p>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn btn--primary btn--block" href="#ariza">Bepul sinov darsiga yozilish</a>
+  </div>
+
+  <script src="app.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</body>
+</html>
